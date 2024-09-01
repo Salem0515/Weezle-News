@@ -5,7 +5,7 @@ const Board = ({ category }) => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        const url = `https://newsapi.org/v2/top-headlines?country=eg&category=${category}&apiKey= 01b32b224a5e4a2eabc15c3b59519b10`;
+        const url = `https://newsapi.org/v2/top-headlines?country=eg&category=${category}&apiKey=01b32b224a5e4a2eabc15c3b59519b10`;
 
         fetch(url)
           .then(response => response.json())
