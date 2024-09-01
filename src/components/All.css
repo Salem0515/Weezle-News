@@ -1,0 +1,94 @@
+/* All.css */
+
+/* Navbar styling */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Golden color on hover */
+}
+
+/* NewsItem card styling */
+.card {
+    background-color: #212529;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 345px;
+    height: auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+}
+
+/* Image Styling */
+.card-img-top {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin: 15px auto;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        max-width: none;
+        margin: 10px auto;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
